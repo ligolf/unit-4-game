@@ -4,12 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    
-
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Crystals Collector Game</title>
 
 </head>
 <body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+            <h1>Crystals Rocks and Gems Collector!</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-7">
+            
+                <div id="notes">
+
+                <p class="text-left">You will be given a random number at the start of the game.<br><br>There are 4 crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.<br><br>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.<br><br>The value of each crystal is hidden from you until you click on it.<br><br>Each time when the game starts, the game will change the values of each crystal.</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-5">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div id=compGen>
+                    <p id="randomCompGen"></p>
+                </div>
+                
+            </div>
+
+            <div class="col-sm-3">
+                <div id="scoreCard">
+                    <p id="win">Wins: 0</p>
+                    <p id="lose">Losses: 0</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="scoreCard">
+                    Your total score is: <span id="currentScore">0</span>
+                </div>
+            </div>  
+    
+        </div>  
+    
+    
+        <div class="row">
+
+                <div class="col-sm-2">
+                        <button id="rock1-button" class="btn btn-primary btn-sm" value= "9"><img id="rock"src="assets/images/crystal1.gif" alt="crystal1"></button>
+                        
+                </div>
+                <div class="col-sm-2">
+                        <button id="rock2-button" class="btn btn-primary btn-sm" value= "10"><img id="rock"src="assets/images/crystal2.gif" alt="crystal2"></button>
+                </div>
+                <div class="col-sm-2">
+                        <button id="rock3-button" class="btn btn-primary btn-sm" value= "8"><img id="rock"src="assets/images/crystal3.gif" alt="crystal3"></button>
+                </div>
+                <div class="col-sm-2">
+                        <button id="rock4-button" class="btn btn-primary btn-sm" value= "3"><img id="rock"src="assets/images/crystal4.gif" alt="crystal4"></button>
+                </div>
+
+
+            <div class="row">
+
+            </div>
+
+        </div>
+        
+
+
+    <script src="Assets/Javascript/game.js"></script>
     
 </body>
 </html>
